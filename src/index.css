@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+::selection{
+    color: rgb(26, 35, 136);
+}
+select option:focus{
+    background-color: aquamarine;
+    color: black;
+}
+.tasks{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /* box-shadow:inset 0px 0px 10px 5px rgba(0, 0, 0, 0.4),inset 0px 0px 10px -5px rgba(0, 0, 0, 0.2),inset 0px 0px 20px 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+}
