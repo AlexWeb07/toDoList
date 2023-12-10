@@ -20,17 +20,17 @@ function Header() {
     }
 
   return (
-    <div className='w-[45%] h-40 flex flex-column flex-wrap justify-center items-center'>
-        <h1 className='text-3xl font-bold text-indigo-600'>Add your daily task</h1>
-        <form className='flex flex-row h-10 w-full justify-center gap-10' onSubmit={handleAdd}>
-            <select defaultValue="all" className={`outline-none border-none bg-sky-800 px-2 rounded-md text-sm font-bold text-lime-200`} onChange={handleFilter}>
+    <div className='header w-[45%] h-[8rem] flex flex-col justify-evenly'>
+        <h1 className='flex justify-center header-h1 text-3xl font-bold text-shadow-lg text-[var(--clr2)] w-full h-[30%]'>Add your daily task</h1>
+        <form className='header-form flex flex-row items-center w-[100%] h-[2.5rem] justify-evenly' onSubmit={handleAdd}>
+            <select defaultValue="all" className={`header-sel w-[30%] h-[2.5rem] w-[10rem] outline-none border-none bg-[var(--clr1)] px-2 rounded-md text-sm font-bold text-[var(--clr4)]`} onChange={handleFilter}>
                 <option value="all" >⇶ All</option>
                 <option value="true">Completed ✓</option>
                 <option value='false'>Not Completed &nbsp;✕</option>
             </select>
-            <div className=' flex justify-center items-center h-full'>
-                <input type="text" value={task} placeholder='Enter the task' className=' outline-none border-transparent border-2 border-b-sky-500 t pl-3 h-full w-80 bg-transparent' minLength={4} onChange={handleChange}/>
-                <button type="submit" className='ml-4 text-blue-600'>Add</button>
+            <div className='header-input flex flex-row justify-center items-center h-full'>
+                <input type="text" value={task} placeholder='Enter the task' className=' outline-none text-md border-2 rounded-lg pl-2 border-[var(--clr1)] h-full w-80 bg-transparent caret-[var(--clr4)] text-[var(--clr4)]' minLength={4} onChange={handleChange}/>
+                <button type="submit" className='ml-4 bg-[var(--clr1)] w-[5rem] h-[2.5rem] rounded-3xl text-[var(--clr4)]'>Add</button>
             </div>
             
         </form>
