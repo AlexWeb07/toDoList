@@ -19,14 +19,10 @@ html{
     font-size: 16px;
 }
 *{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Loro', serif;
 }
 ::selection{
     color: rgb(26, 35, 136);
-}
-select option:focus{
-    background-color: aquamarine;
-    color: black;
 }
 .tasks{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
