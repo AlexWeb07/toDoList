@@ -7,7 +7,7 @@ function Tasks() {
     const {allTask,filter}=context
     let flag=0;
   return (
-    <div className='tasks flex flex-col items-start w-[35rem] h-[30rem] bg-[var(--clr3)] p-2 overflow-y-scroll cursor-pointer'>
+    <div className='tasks flex flex-col items-start overflow-hidden w-[35rem] h-[30rem] bg-[var(--clr3)] overflow-y-scroll cursor-pointer bg-[var(--clr4)] p-2'>
         {allTask.length!==0 ?
             (allTask.map((value,index)=>{
                   if(filter===null)
@@ -17,7 +17,7 @@ function Tasks() {
                     return (value.checked===filter && <TaskItem key={index} id={index} task={value} />)
                   }
             })) 
-            : <div className='flex w-full h-full text-2xl text-yellow-700 items-center justify-center'>No task to do..</div>}
+            : <div className='flex w-full h-full text-2xl items-center justify-center text-[var(--clr1)]'>No task to do..</div>}
           
     </div>
   )

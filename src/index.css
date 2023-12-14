@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 :root{
-    --clr1:#071952;
-    --clr2:#0B666A;
-    --clr3:#35A29F;
-    --clr4:#97FEED;
+    --clr1:#FFC996;
+    --clr2:#FF8474;
+    --clr3:#9F5F80;
+    --clr4:#583D72;
 
 }
 ::-webkit-scrollbar{
     display: none;
+}
+input::placeholder{
+    color: var(--clr2);
 }
 html{
     font-size: 16px;
@@ -30,24 +33,60 @@ select option:focus{
     /* box-shadow:inset 0px 0px 10px 5px rgba(0, 0, 0, 0.4),inset 0px 0px 10px -5px rgba(0, 0, 0, 0.2),inset 0px 0px 20px 5px rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 }
-/* .header{
-    background-color: #fff;
-    
-}
-.header-form{
-    background-color: red;
-} */
 @media screen and (max-width:635px) {
+    .fg{
+        justify-content: space-evenly;
+    }
+    .header{
+        width: 90%;
+        height: 8rem;
+        justify-content: start;
+        gap:1rem;
+    }
+    .header-h1{
+        font-size: 3rem;
+    }
     .header-form{
-        /* background-color: red; */
-        width: 100%;
-        padding:0 2.5rem ;
+        height: max-content;
         flex-direction: column-reverse;
-        align-items: left;
-        gap: 0;
+        align-items: flex-start;
+    }
+    .header-action{
+        justify-content: start;
+        width: 100%;
+    }
+    .header-input{
+        width: 100%;
+        height: 3.5rem;
+    }
+    .lg{
+        display: none;
+    }
+    .small-sc{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 3.5rem;
+        justify-content: space-between;
     }
     .header-sel{
-        height: 2rem;
+        height: 100%;
+        width: 50%;
+
+    }
+    .tasks{
+        width: 90%;
+        height: 65%;
     }
     
 }
+/* @media screen and (max-width:550px) {
+    html{
+        font-size: 15.5px;
+    }
+}*/
+@media screen and (max-width:450px) {
+    html{
+        font-size: 15px;
+    }
+} 

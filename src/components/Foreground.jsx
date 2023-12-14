@@ -5,12 +5,10 @@ import Tasks from './Tasks'
 function Foreground() {
     
   return (
-    <div className='absolute flex justify-center items-center z-2 w-full h-full'>
-        <div className='w-full h-full bg-[var(--clr3)] backdrop-blur-sm flex flex-col justify-center items-center gap-10'>
+    <div className='fg absolute flex justify-center items-center flex-col justify-center gap-10 z-2 w-full h-full bg-[var(--clr3)]'>
             <Header/>
             <Tasks/>
         </div>
-      </div>
   )
 }
 
