@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <div className='header h-[8rem] flex flex-col justify-evenly'>
-        <h1 className='flex justify-center header-h1 text-4xl font-bold font-["Bevan"] text-[var(--clr2)] w-full'>TO-DO List</h1>
+        <h1 className='flex justify-center header-h1 text-4xl font-bold font-serif text-[var(--clr2)] w-full'>TO-DO List</h1>
         <form className='header-form flex flex-row items-center w-[100%] h-[2.5rem] justify-evenly' onSubmit={handleAdd}>
 
             {/* for small screen */}
