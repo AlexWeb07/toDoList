@@ -7,7 +7,7 @@ function Tasks() {
     const {allTask,filter}=context
     let flag=0;
   return (
-    <div className='tasks flex flex-col items-start overflow-hidden w-[35rem] h-[30rem] bg-[var(--clr3)] overflow-y-scroll cursor-pointer bg-[var(--clr4)] p-2'>
+    <div className='tasks flex flex-col items-start overflow-hidden w-[35rem] h-[30rem] overflow-y-scroll cursor-pointer bg-[var(--clr4)] p-2'>
         {allTask.length!==0 ?
             (allTask.map((value,index)=>{
                   if(filter===null)

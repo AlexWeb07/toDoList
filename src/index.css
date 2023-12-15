@@ -3,31 +3,33 @@
 @tailwind utilities;
 
 :root{
-    --clr1:#FFC996;
-    --clr2:#FF8474;
-    --clr3:#9F5F80;
-    --clr4:#583D72;
+    --clr1:#6A759B;
+    --clr2:#F1F6F8;
+    --clr3:#B9D4F1;
+    --clr4:#21273D;
 
 }
 ::-webkit-scrollbar{
     display: none;
 }
 input::placeholder{
-    color: var(--clr2);
+    color: var(--clr4);
 }
 html{
     font-size: 16px;
 }
 *{
-    font-family: 'Loro', serif;
+    font-family:  'Josefin Sans', sans-serif;
 }
 ::selection{
-    color: rgb(26, 35, 136);
+    color: white;
 }
 .tasks{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    /* box-shadow:inset 0px 0px 10px 5px rgba(0, 0, 0, 0.4),inset 0px 0px 10px -5px rgba(0, 0, 0, 0.2),inset 0px 0px 20px 5px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.552) 0px 0px 80px 0px;
     border-radius: 10px;
+}
+.header-add{
+    font-weight: 700;
 }
 @media screen and (max-width:635px) {
     .fg{
@@ -53,7 +55,7 @@ html{
     }
     .header-input{
         width: 100%;
-        height: 3.5rem;
+        height: 3rem;
     }
     .lg{
         display: none;
